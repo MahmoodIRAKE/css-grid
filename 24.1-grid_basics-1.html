@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24.1</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: 'box1 box1  box-1 box-1' 'side box2 box2 box2' 'box3 box3 box3 box3';
+            grid-gap: 1rem;
+        }
+        
+        .item1 {
+            grid-area: box1;
+            background-color: rgb(197, 30, 30);
+            border-radius: 5px;
+            height: 80px;
+        }
+        
+        .item2 {
+            grid-area: box-1;
+            background-color: blue;
+            border-radius: 5px;
+            height: 80px;
+        }
+        
+        .item3 {
+            grid-area: side;
+            background-color: rgb(6, 92, 17);
+            border-radius: 5px;
+            height: 80px;
+        }
+        
+        .item4 {
+            grid-area: box2;
+            background-color: rgb(75, 6, 82);
+            border-radius: 5px;
+            height: 80px;
+        }
+        
+        .item5 {
+            grid-area: box3;
+            background-color: rgb(227, 252, 0);
+            border-radius: 5px;
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">Item1</div>
+        <div class="item2">Item2</div>
+        <div class="item3">Item3</div>
+        <div class="item4">Item4</div>
+        <div class="item5">Item5</div>
+    </div>
+</body>
+
+</html>

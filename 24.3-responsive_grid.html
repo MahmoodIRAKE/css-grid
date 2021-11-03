@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24.2</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: 'box1 box1  box1 box1' 'side content content side2' 'footer footer footer footer';
+            grid-gap: 1rem;
+        }
+        
+        .item1 {
+            grid-area: box1;
+            background-color: rgb(197, 30, 30);
+            border-radius: 5px;
+            height: 80px;
+        }
+        
+        .item2 {
+            grid-area: side;
+            background-color: rgb(47, 30, 197);
+            border-radius: 5px;
+            height: 80px;
+        }
+        
+        .item3 {
+            grid-area: content;
+            background-color: rgb(15, 187, 58);
+            border-radius: 5px;
+            height: 80px;
+        }
+        
+        .item4 {
+            grid-area: side2;
+            background-color: rgb(187, 15, 173);
+            border-radius: 5px;
+            height: 80px;
+        }
+        
+        .item5 {
+            grid-area: footer;
+            background-color: rgb(243, 239, 11);
+            border-radius: 5px;
+            height: 80px;
+        }
+        
+        @media(max-width:768px) {
+            .container {
+                display: grid;
+                grid-template-areas: 'box1 box1  box1 box1' 'side content content content' 'side2 side2 side2 side2' 'footer footer footer footer';
+                grid-gap: 1rem;
+            }
+        }
+        
+        @media(max-width:500px) {
+            .container {
+                display: grid;
+                grid-template-areas: 'box1 box1 ' 'side side' 'content content' 'side2 side2' 'footer footer';
+                grid-gap: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">Item1</div>
+        <div class="item2">Item1</div>
+        <div class="item3">Item1</div>
+        <div class="item4">Item1</div>
+        <div class="item5">Item1</div>
+
+    </div>
+</body>
+
+</html>
